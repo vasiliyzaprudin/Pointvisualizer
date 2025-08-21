@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.canvas.Canvas?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.pointvisualizer.controller.MainController">
+
+    <top>
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <Label text="Point Visualizer" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+            <Button fx:id="refreshButton" text="Refresh Points" onAction="#refreshPoints"/>
+            <Label fx:id="statusLabel" text="Ready"/>
+        </VBox>
+    </top>
+
+    <center>
+        <Canvas fx:id="canvas" width="800" height="500"
+                style="-fx-border-color: black; -fx-border-width: 1;"/>
+    </center>
+
+</BorderPane>
