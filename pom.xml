@@ -5,7 +5,7 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
+    <groupId>org.example</groupId>
     <artifactId>point-visualizer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -45,7 +45,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.example.pointvisualizer.Main</mainClass>
+                    <mainClass>org.example.pointvisualizer.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
